@@ -2,7 +2,18 @@
 name = "exdir"
 version = "0.1.0"
 edition = "2021"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+authors = ["Eric Berquist <eric.berquist@gmail.com>"]
+description = "Rust implementation of the Experimental Directory Structure (exdir) data format"
+repository = "https://github.com/berquist/exdir.rs"
 
 [dependencies]
+ndarray = "0.15"
+npyz = "0.7"
+num-traits = "0.2"
+serde = { version = "1.0", features = [ "derive" ]}
+serde_yaml = "0.9"
+
+[dev-dependencies]
+rstest = "0.16"
+tempdir = "0.3"
+uuid = { version = "1.3", features = [ "v4", "fast-rng" ] }
