@@ -22,9 +22,10 @@ repos:
     rev: "0.21.0"
     hooks:
       - id: check-github-workflows
-  - repo: https://github.com/doublify/pre-commit-rust
-    rev: "v1.0"
-    hooks:
-      - id: fmt
-      - id: cargo-check
-      # - id: clippy
+  # These fail on pre-commit.ci, no cargo/Rust toolchain
+  # - repo: https://github.com/doublify/pre-commit-rust
+  #   rev: "v1.0"
+  #   hooks:
+  #     - id: fmt
+  #     - id: cargo-check
+  #     # - id: clippy
