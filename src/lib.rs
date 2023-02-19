@@ -345,8 +345,20 @@ mod tests {
     #[rstest]
     fn open_object(exdir_tmpfile: FixtureExdir) {
         let grp = exdir_tmpfile.testfile.unwrap().create_group("test");
-        let grp2 = grp.create_group("test2");
+        let _grp2 = grp.create_group("test2");
     }
+
+    #[rstest]
+    fn object_attrs(setup_teardown_file: FixtureExdir) {}
+
+    #[rstest]
+    fn object_meta(setup_teardown_file: FixtureExdir) {}
+
+    #[rstest]
+    fn object_directory(setup_teardown_file: FixtureExdir) {}
+
+    #[rstest]
+    fn object_create_raw(setup_teardown_file: FixtureExdir) {}
 
     #[test]
     fn npy_example() -> std::io::Result<()> {

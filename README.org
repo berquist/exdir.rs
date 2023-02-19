@@ -1,0 +1,5 @@
+* Experimental Directory Structure (exdir, Exdir, ExDir)
+
+This is a Rust implementation of the exdir file specification, inspired by
+- https://github.com/CINPLA/exdir (Python, reference implementation)
+- https://github.com/HunterBelanger/exdir-cpp (C++)
